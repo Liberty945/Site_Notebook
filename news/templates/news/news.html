@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Список задач{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1 id="word-tasks">Задачи</h1>
+        {% if task %}
+            {% for el in task %}
+                <div class="alert alert-warning" id="tasks">
+                    <h3 id="news-text">{{ el.number }}. {{ el.title }}</h3><br>
+                    <a href="{% url 'tasks-detail' el.id %}" class="btn btn-warning" id="btn-open">Открыть задачу</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>У вас нет задач!</p>
+        {% endif %}
+    </div>
+{% endblock %}

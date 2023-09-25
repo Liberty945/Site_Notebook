@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Изменение задачи{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Форма по изменению задачи</h1>
+        <form method='post'>
+            {% csrf_token %}
+            {{ form.number }}<br>
+            {{ form.title }}<br>
+            {{ form.text }}<br>
+          <button class="btn btn-success" type="submit">Изменить задачу</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Онлайн список задач</h1>
+        <p>Сайт предназначен, для онлайн составления списка задач</p>
+        <a href="{% url 'news_home' %}"><li><button class="btn btn-warning" id="btn-tasklist">Перейти к списку задач</button></li></a>
+    </div>
+{% endblock %}

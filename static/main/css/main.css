@@ -1,0 +1,183 @@
+body {
+    background-image: linear-gradient(
+    to bottom right,
+    #14062b 25%,
+    #2a184a 45%,
+    #2c1b4a 52%,
+    #292b61 85%,
+    #293e61 93%
+    );
+    height: 100vh;
+
+    animation: animatebg 20s ease infinite;
+    background-size: 200%;
+}
+
+aside {
+    float: left;
+    background: #131314;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(to bottom left,
+     #a9abaa 25%,
+     #333332 45%,
+     #630318 52%,
+     #ff6200 85%,
+     #ad8502 95%);
+    border-right: 10px ridge #483D8B;
+
+
+    animation: animatebg 20s ease infinite;
+    background-size: 200%;
+}
+
+span {
+    color: #330a8c;
+}
+
+aside img {
+    width: 125px;
+    float; left;
+    position: relative;
+    left: -10px;
+    border-radius: 200px;
+    border: 0px ridge #483D8B;
+    box-shadow: 0 0 50px #66
+}
+
+aside .book{
+    font-size: 28.5px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 6px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+    color: #b4d132;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #b4d132;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #c99b04;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+#btn-delete-delete {
+    background: red;
+    border: 0px;
+}
+
+#btn-delete-details {
+    position: relative;
+    left: 10px;
+    margin-top: 10px;
+}
+
+#btn-change {
+    position: relative;
+    right: 10px;
+    margin-top: 10px;
+    background: #b4d132;
+    border: 0px;
+}
+
+#btn-plus {
+    background: #b4d132;
+    border: 0px;
+}
+
+#btn-open {
+    background: #b4d132;
+    position: relative;
+    left: 110px;
+    margin-top: -15px;
+    border: 0px;
+    transition: all .6s ease;
+}
+
+#btn-tasklist {
+    background: #b4d132;
+    border: 0px;
+}
+
+#news-text {
+    text-align: center;
+    width: 100%;
+}
+
+main .features h1 {font-size: 40px; color: #fc5a03;}
+main .features p {max-width: 450px; margin: 20px auto; font-size: 20px;}
+
+@keyframes animatebg {
+    0% {
+        background-position: 0;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+#btn-add {
+    border: 0px;
+    background: #b4d132;
+    color: black;
+}
+
+.alert-warning {
+    background-color: red;
+    background-image: linear-gradient(to bottom right,
+     #ad3723 25%,
+     #ad5323 45%,
+     #ad6a23 52%,
+     #f2b407 85%,
+     #f2d307 95%);
+     color: white;
+    float: center;
+    clear: both;
+    width: 400px;
+    margin: 20px 36.5%;
+    text-align: left;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    animation: animatebg 20s ease infinite;
+    background-size: 200%;
+}
+
+#word-tasks {
+    position: relative;
+    top: -50px;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
